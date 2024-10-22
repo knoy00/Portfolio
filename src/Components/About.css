@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Add this in Navbar.css, About.css, or a new global.css */
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.about{
+    background-color: #fefef6;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 30px;
+    scroll-behavior: smooth;
+}
+
+.about_header{
+    font-size: 60px;
+    margin-top: 15%;
+    display: block;
+}
+
+.about_header span{
+    background-color: #000000;
+    color: #fefef6;
+    padding: 10px;
+    font-style: italic;
+}
+
+.about_content{
+    width: 50%;
+    padding: 20px;
+    margin-left: 50%;
+}
+
+.about_content p{
+    font-size: 20px;
+    
+}

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .navbar{
     width: 100%;
@@ -12,6 +13,7 @@
     color: rgb(251, 251, 251);
     font-family: 'Poppins';
     padding: 10px 30px;
+    scroll-behavior: smooth;
 }
 
 .nav_links{

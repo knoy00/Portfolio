@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .hero{
@@ -12,7 +13,14 @@
     padding: 20px;
     position: relative;
     transition: .4s ease-in-out;
+    scroll-behavior: smooth;
 }
+
+/* Add this in Navbar.css, About.css, or a new global.css */
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 .hero_title{
     font-size: 55px;
@@ -43,13 +51,12 @@
     position: absolute;
     width: 70%;
     height: 60vh;
-  
     margin-top: 5%;
-    margin-left: 28.5%;
+    margin-left: 23%;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    z-index: 1;
 }
 
 .hero_section .section_1, .section_2, .section_3{
