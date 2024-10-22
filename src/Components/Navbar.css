@@ -8,18 +8,18 @@
     height: 10vh;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: #181818ef;
     color: rgb(251, 251, 251);
     font-family: 'Poppins';
     padding: 10px 30px;
     scroll-behavior: smooth;
     position: fixed;
     z-index: 100;
+    backdrop-filter: blur(40px);
 }
 
 .nav_links{
     margin-left: 70%;
-    border: 1px solid black;
 }
 
 .nav_links ul {
