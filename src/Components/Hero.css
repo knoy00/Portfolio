@@ -14,6 +14,7 @@
     position: relative;
     transition: .4s ease-in-out;
     scroll-behavior: smooth;
+    padding-top: 10vh;
 }
 
 /* Add this in Navbar.css, About.css, or a new global.css */
@@ -32,8 +33,10 @@ html {
 .hero_content{
     margin-left: 70%;
     width: 25%;
-    margin-top: 5%;
+    margin-top: 4%;
     font-size: 18px;
+    padding-bottom: 20px;
+    color: #eae3d9;
 }
 
 .hero_scroll{
@@ -51,7 +54,7 @@ html {
     position: absolute;
     width: 70%;
     height: 60vh;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 23%;
     display: flex;
     align-items: center;

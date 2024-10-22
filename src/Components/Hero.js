@@ -18,9 +18,7 @@ function Hero(){
                 </div>
 
                 <div className='section_2'>
-                    <h1>My Projects</h1>
-                    <p>Dive into a collection of my best work!</p>
-                    <button>Goto Projects</button>
+                    <img />
                 </div>
 
                 <div className='section_3'>

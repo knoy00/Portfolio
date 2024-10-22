@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 .navbar{
     width: 100%;
@@ -14,6 +13,8 @@
     font-family: 'Poppins';
     padding: 10px 30px;
     scroll-behavior: smooth;
+    position: fixed;
+    z-index: 100;
 }
 
 .nav_links{
@@ -34,9 +35,10 @@
     list-style: none;
 }
 
-.nav_links ul li a {
+.nav_links ul li a, li .link{
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
+    cursor: pointer;
 }
 

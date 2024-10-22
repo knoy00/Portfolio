@@ -13,17 +13,19 @@ function Navbar(){
     return(
         <div className="navbar">
             <div className="nav_logo">
-                <h2>Knoy</h2>
+                <h1>Knoy</h1>
             </div>
 
             <div className="time">
-                Time
+                
             </div>
 
             <div className="nav_links">
                 <ul>
-                    <li><Link to="About" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>About</Link></li>
-                    <li><a href="">Projects</a></li>
+                    <li><Link to="About" spy={true} smooth={true} offset={-100} duration={1000} onClick={closeMenu}>About</Link></li>
+
+                    <li><Link to="Project" spy={true} smooth={true} offset={-100} duration={1000} onClick={closeMenu}>Project</Link></li>
+                    
                 </ul> 
             </div>
         </div>
