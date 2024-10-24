@@ -5,6 +5,7 @@ function About(){
     return(
         <div className="about" id="About">
             <div className="about_header"><span>About</span> Me</div>
+            <hr />
 
             <div className="about_content">
                 <p>Hi, I'm Kelvin Nana Osei Yeboah, a Front-End Developer with a background in accounting and a strong passion for web development. I hold a Bachelor of Science in Accounting from Central University College and a Software Engineering Diploma, but my true calling is in creating intuitive and efficient user interfaces.

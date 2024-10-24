@@ -22,9 +22,9 @@ function Navbar(){
 
             <div className="nav_links">
                 <ul>
-                    <li><Link to="About" spy={true} smooth={true} offset={-100} duration={1000} onClick={closeMenu}>About</Link></li>
+                    <li><Link to="About" spy={true} smooth={true} offset={-70} duration={1000} onClick={closeMenu}>About</Link></li>
 
-                    <li><Link to="Project" spy={true} smooth={true} offset={-100} duration={1000} onClick={closeMenu}>Project</Link></li>
+                    <li><Link to="Project" spy={true} smooth={true} offset={-50} duration={1000} onClick={closeMenu}>Project</Link></li>
                     
                 </ul> 
             </div>
