@@ -16,9 +16,6 @@ function Navbar(){
                 <h1>Knoy</h1>
             </div>
 
-            <div className="time">
-                
-            </div>
 
             <div className="nav_links">
                 <ul>
