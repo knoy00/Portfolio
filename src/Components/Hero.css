@@ -17,10 +17,9 @@
     padding-top: 13vh;
 }
 
-/* Add this in Navbar.css, About.css, or a new global.css */
 html {
     scroll-behavior: smooth;
-  }
+}
   
 
 .hero_title{

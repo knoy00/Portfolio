@@ -118,3 +118,26 @@
     border-radius: 50%;
     color: #3e3e3e;
 }
+
+.features{
+    width: 300px;
+    padding: 0 10px;
+}
+
+.features button {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: white;
+    transition: ease-in-out .3s;
+}
+
+.features button:hover{
+    background-color: #000;
+    color: #ffffff;
+    border: 1px solid #fff;
+}

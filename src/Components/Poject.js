@@ -1,14 +1,21 @@
 import React from "react";
 import projectsData from "./ProjectsData.js";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router-dom";
+
 
 import './Project.css';
 
 function ProjectCard({id, title, description, image, icon, link, github}){
+    const navigate = useNavigate();
+
+    const handleClick = ( id, title, description, image, icon, link, github) => {
+        navigate('/Features', {state: {id, title, description, image, icon, link, github}});
+    }
     return(
         <div className="card">
             <div className="project-img">
@@ -31,6 +38,12 @@ function ProjectCard({id, title, description, image, icon, link, github}){
             <div className="project-description">
                 <p>{description}</p>
             </div>
+
+            <Link to='/Features'>
+                <div className="features">
+                    <button>Project Features</button>
+                </div>
+            </Link>
 
            
         </div>

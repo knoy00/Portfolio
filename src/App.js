@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "./Components/Navbar.js";
-import Hero from "./Components/Hero.js";
-import About from "./Components/About.js";
-import Project from "./Components/Poject.js";
+import Home from "./Components/Home";
+import Features from "./Components/Features";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -10,13 +9,12 @@ function App() {
 
   
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Project />
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Features" element={<Features />} />
+      </Routes>
+    </Router>
   );
 }
 

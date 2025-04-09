@@ -1,12 +1,21 @@
 import React from 'react';
 import './Hero.css';
+import { motion } from 'motion/react';
 
 function Hero(){
     return(
         <div className='hero'>
-            <div className='hero_title'>Welcome to My world of Design & Code</div>
+            <motion.div className='hero_title'
+            initial={{opacity: 0, y: -150}}
+            animate={{opacity: 1, y: 20}}
+            transition={{duration: 1, ease: 'easeInOut'}}
+            >Welcome to My world of Design & Code</motion.div>
 
-            <div className='hero_content'>Explore my projects, where creativity meets functionality. Simplify your digital experience with designs and code that speak for themselves.</div>
+            <motion.div className='hero_content'
+            initial={{opacity: 0, x: 180}}
+            animate={{opacity: 1, x: 0}}
+            transition={{duration: 1, ease: 'linear'}}
+            >Explore my projects, where creativity meets functionality. Simplify your digital experience with designs and code that speak for themselves.</motion.div>
 
             <div className='hero_scroll'>SCROLL DOWN</div>
 
