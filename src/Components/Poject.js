@@ -1,6 +1,5 @@
 import React from "react";
 import projectsData from "./ProjectsData.js";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -10,11 +9,11 @@ import { useNavigate } from "react-router-dom";
 
 import './Project.css';
 
-function ProjectCard({id, title, description, image, icon, link, github}){
+function ProjectCard({id, title, description, image, icon, link, github, about, features}){
     const navigate = useNavigate();
 
-    const handleClick = ( id, title, description, image, icon, link, github) => {
-        navigate('/Features', {state: {id, title, description, image, icon, link, github}});
+    const handleClick = ( id, title, description, image, icon, link, github, about, features) => {
+        navigate('/Features', {state: {id, title, description, image, icon, link, github, about, features}});
     }
     return(
         <div className="card">
@@ -39,11 +38,9 @@ function ProjectCard({id, title, description, image, icon, link, github}){
                 <p>{description}</p>
             </div>
 
-            <Link to='/Features'>
-                <div className="features">
-                    <button>Project Features</button>
-                </div>
-            </Link>
+            <div className="features">
+                <button onClick={() => handleClick(id, title, description, image, icon, link, github, about, features)}>Project Features</button>
+            </div>
 
            
         </div>
@@ -61,8 +58,10 @@ function Project(){
             description={items.description}
             image={items.image}
             icon={items.icon}
-            link = {items.link}
+            link = {items.link} 
             github = {items.github}
+            about= {items.about}
+            features = {items.features}
         />
     );
   });
