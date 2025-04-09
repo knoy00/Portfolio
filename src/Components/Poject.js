@@ -3,7 +3,7 @@ import projectsData from "./ProjectsData.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-brands-svg-icons";
+// import { faLink } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 
@@ -23,9 +23,9 @@ function ProjectCard({id, title, description, image, icon, link, github, about, 
             </div>
 
             <div className="links">
-                <a href={github} target="_blank"><FontAwesomeIcon icon={faGithub} className="github"/></a>
+                <a href={github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="github"/></a>
                 <div className="live">
-                    <a href={link} target="_blank">Live Demo</a>
+                    <a href={link} target="_blank" rel="noreferrer">Live Demo</a>
                 </div>
             </div>
             

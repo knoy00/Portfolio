@@ -27,7 +27,7 @@ function Hero(){
                 </div>
 
                 <div className='section_2'>
-                    <img />
+                    {/* <img /> */}
                 </div>
 
                 <div className='section_3'>

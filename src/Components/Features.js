@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 import './Features.css'
 function Features() {
     const location = useLocation();
-    const {title, description, about, features} = location.state
+    const {title, about, features} = location.state
   return (
     <div className='features'>
       <div className='features_inner'>
